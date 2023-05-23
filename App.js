@@ -3,30 +3,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 function App(){
   return(
-    <View style={styles.area}>
-    <Text style={[styles.titulo,styles.textoAlinhado]}>Adielson </Text>
-    <Text style={[styles.titulo, styles.textoAlinhado]}>Medeiros</Text>
-    <Text style={[styles.subTitulo, styles.textoAlinhado]}>AAABBBB</Text>
+    <View style={{flex: 1, flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-end'}}>
+    <View style={{height: 50,width: 50,  backgroundColor: '#121212'}}></View>
+    <View style={{height: 50,width: 50, backgroundColor: 'red'}}></View>
+    <View style={{height: 50,width: 50, backgroundColor: 'green'}}></View>
+    <View style={{height: 50,width: 50, backgroundColor: 'blue'}}></View>
     </View>
-  )
+)
 }
-
-const styles = StyleSheet.create({
-  area:{
-    marginTop: 50
-},
-titulo:{
-  fontSize: 29,
-  color: '#FF0000'
-},
-subTitulo:{
-  color:'#00FF00',
-  fontSize: 17,
-  marginTop: 15
-},
-textoAlinhado:{
-  textAlign:'center'
-}
-});
-
 export default App;
